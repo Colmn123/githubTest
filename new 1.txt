@@ -1,0 +1,6 @@
+if (Context.GetField("VAT % Rate").Value==null) {
+  Context.GetField("VAT % Rate").Value="0"
+}
+else {
+  Context.GetField("VAT % Rate").Value=String(((parseInt(Context.GetField("VAT Value").Value))))
+}
